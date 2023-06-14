@@ -17,6 +17,11 @@ const baseConfig = {
                 test: /\.css$/i,
                 use: ['style-loader', 'css-loader'],
             },
+            // loading images
+            {
+                test: /\.jpe?g$|\.gif$|\.png|\.ico|\.svg$/,
+                use: ['file-loader']
+            },
         ],
     },
     resolve: {
