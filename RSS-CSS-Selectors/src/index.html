@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./style.css" rel="stylesheet" type="text/css" />
     <title>RS-CSS-Selectors</title>
 </head>
 <body>
@@ -76,9 +75,41 @@
             <div class="footer"></div>
         </div>
         <div class="options">
-            <div class="menu_list"></div>
-            <div class="options_header"></div>
-            <div class="task"></div>
+            <div class="menu_wrap">
+                <div class="menu_list"></div>
+            </div>
+            <div class="options_header">
+                <span class="level">Level 1 of 10</span>
+                <span class="mark"></span>
+                <div class="level_wrap">
+                    <span class="level_nav">
+                        <a class="prev" href="#"></a>
+                        <a class="next" href="#"></a>
+                    </span>
+                </div>
+                <div class="burger_wrap">
+                    <button class="header__burger-btn">
+                        <span class="one"></span>
+                        <span class="two"></span>
+                        <span class="three"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="task">
+                <p class="selector">Type selector</p>
+                <p class="title">Select elements by their type.</h2>
+                <p class="letter">A</p>
+                <p class="task_text">
+                    Selects all elements of type A. Type refers to the type of tag, so &ltdiv&gt, &ltp&gt and &ltul&gt are all different element types.
+                </p>
+                <p class="examples">Examples</p>
+                <p class="examples_text">
+                    div selects all &ltdiv&gt elements.
+                </p>
+                <p class="examples_text">
+                    p selects all &ltp&gt elements.
+                </p>
+            </div>
         </div>
     </div>
 </body>
