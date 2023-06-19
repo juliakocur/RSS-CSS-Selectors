@@ -30,7 +30,7 @@ h1 {
     text-align: center;
     margin: 0;
     font-size: 45px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .editor,
@@ -39,7 +39,21 @@ h1 {
 }
 
 .footer {
-    padding: 20px 0;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.year {
+  margin: 5px 0 0 0;
+}
+
+.rs {
+  height: 30px;
+}
+
+.git {
+  height: 30px;
 }
 
 .panel {
@@ -252,6 +266,12 @@ h1 {
     line-height: 150%;
     padding: 0;
     margin: 0;
+  }
+
+  .input_code:focus {
+    outline: none;
+    animation: none;
+    background: none;
   }
 
   .editor_left_code {
