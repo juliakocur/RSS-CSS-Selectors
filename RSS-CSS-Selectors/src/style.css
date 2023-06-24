@@ -26,6 +26,12 @@ body {
     margin: 20px 0;
 }
 
+.table_view2 {
+  width: 100%;
+  min-height: 310px;
+  margin: 50px 0 20px 0;
+}
+
 h1 {
     text-align: center;
     margin: 0;
@@ -83,7 +89,8 @@ h1 {
 }
 
 
-.help {
+.help,
+.help2 {
     width: 100px;
     padding: 7px 15px 7px 15px;
     background: rgba(0,0,0,.2);
@@ -93,16 +100,26 @@ h1 {
     cursor: pointer;
 }
 
-.help:hover {
+
+.help:hover,
+.help2:hover {
     color: rgb(228, 222, 222);
 }
 
-.table {
-    width: 300px;
+.table,
+.table2 {
     height: 150px;
     transform:  perspective(400px) rotateX(20deg);
     transform-origin: bottom;
     margin: auto;
+}
+
+.table {
+  width: 300px;
+}
+
+.table2 {
+  width: 410px;
 }
 
 .table_img {
@@ -113,8 +130,18 @@ h1 {
     width: 100%;
 }
 
-.table_top {
-    padding: 15px 15px 22px 15px;
+.table_img2 {
+  box-shadow: 0px 30px 10px rgba(0,0,0,.2);
+  background: linear-gradient(#dd992d,#cd8c26);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+
+.table_top, 
+.table_top2 {
+  padding: 19px 0;
 }
 
 .item {
@@ -124,7 +151,8 @@ h1 {
 }
 
 .plate_first,
-.plate_second {
+.plate_second,
+.plate_task2  {
     border-bottom: solid 5px #DDD;
     background: white;
     border-radius: 20px;
@@ -134,8 +162,42 @@ h1 {
     margin: 0 10px;
 }
 
+.plate_task2 {
+  width: 100px;
+  position: relative;
+}
+
+.plate_task2::before {
+  content: "";
+  position: absolute;
+  left: calc(50% - 32px);
+  top: calc(50% - 32px);
+  height: 65px;
+  width: 65px;
+  border-radius: 60px;
+  border-top: solid 6px #CCC;
+  opacity: .4;
+}
+
+.bento1_task2,
+.bento2_task2 {
+  width: 100px;
+  height: 65px;
+  background: brown;
+  position: relative;
+  border: solid 3px #711c12;
+  border-width: 20px 2px;
+  margin: 0 10px;
+  box-shadow: 0px 8px 0px rgba(0,0,0,.1);
+  display: inline-block;
+  transition: transform ease-out .2s;
+}
+
 .tooltip1,
-.tooltip2 {
+.tooltip2,
+.tooltip1_task2,
+.tooltip2_task2,
+.tooltip3_task2 {
   display: block;
   min-width: 80px;
   height: 20px;
@@ -153,10 +215,30 @@ h1 {
 
 }
 
-.tool {
+.tool,
+.tool2 {
   display: flex;
   justify-content: center;
   margin-bottom: -15px;
+}
+
+.up {
+  animation: upitem .3s 1;
+  transform: translateY(-600px);
+}
+
+@keyframes upitem {
+  0% { transform: translateY(0px) rotate3d(0,0,0,0deg); }
+  100% { transform: translateY(-600px) rotate3d(0,0,0,0deg);}
+}
+
+.wrong {
+  animation: wrong1 .1s 3;
+}
+
+@keyframes wrong1 {
+  0%   { transform: translateX(0); }
+  75% {  transform: translateX(-5px); }
 }
 
 .hover {
@@ -168,7 +250,8 @@ h1 {
   color:rgb(228, 222, 222);
 }
 
-.item:before {
+.plate_first:before,
+.plate_second:before {
     content: "";
     position: absolute;
     left: calc(50% - 32px);
@@ -206,7 +289,7 @@ h1 {
     background: #ac741c;
     height: 15px;
     transform: perspective(160px) rotateX(-40deg);
-    margin: -1px 3px;
+    margin: -1px 5px;
   }
 
   .first_leg,
@@ -229,7 +312,7 @@ h1 {
   .editor_container {
     background-color: #221f19;
     width: 90%;
-    min-height: 400px;
+    min-height: 300px;
     margin: 0 auto 15px auto;
     display: flex;
 
@@ -263,7 +346,6 @@ h1 {
   }
 
   .editor_left {
-    min-height: 400px;
     background: #efefef;
     border-bottom: solid 1px  rgb(68, 67, 67);
   }
@@ -285,7 +367,6 @@ h1 {
   }
 
   .editor_left_numbers {
-
     color: #999;
     background: #DDD;
   }
@@ -319,8 +400,21 @@ h1 {
     padding-top: 5px;
   }
 
+  .editor_right_code2 {
+    padding-top: 5px;
+  }
+
+  .none {
+    display: none;
+  }
+
+  .block {
+    display: block;
+  }
+
   .enter {
     background: #ddd;
+    outline: none;
     border-radius: 2px;
     padding: 2px 7px 2px 7px;
     color: #666;
@@ -351,7 +445,10 @@ h1 {
   }
 
   .plate1:hover,
-  .plate2:hover {
+  .plate2:hover,
+  .bento1:hover,
+  .bento2:hover,
+  .plate3:hover {
     color: rgba(255,255,255,.6);
   }
 
@@ -364,12 +461,33 @@ h1 {
 
   @media (max-width: 820px) {
     .plate_first,
-    .plate_second {
+    .plate_second,
+    .plate_task2 {
       height: 66px;
     }
 
-    .item {
+    .bento1_task2,
+    .bento2_task2 {
+    height: 50px;
+  }
+
+   .bento1_task2, 
+   .bento2_task2 {
+     border-width: 10px 2px;
+   }
+    .plate_task2 {
       width: 66px;
+    }
+
+    .plate_task2::before {
+      left: calc(50% - 22px);
+      top: calc(50% - 22px);
+      height: 42px;
+      width: 42px;
+    }
+
+    .item {
+      width: 60px;
     }
 
     .item:before {
@@ -385,8 +503,21 @@ h1 {
       transform: perspective(400px) rotateX(20deg);
     }
 
+    .table2 {
+      width: 300px;
+      height: 115px;
+      transform: perspective(400px) rotateX(20deg);
+    }
+
+    .table_view2 {
+      margin: 20px 0;
+    }
+
     .tooltip1,
-    .tooltip2 {
+    .tooltip2,
+    .tooltip1_task2,
+    .tooltip2_task2,
+    .tooltip3_task2 {
       font-size: 12px;
       height: 16px;
     }
@@ -402,8 +533,9 @@ h1 {
       height: 7px;
   }
 
-  .table_view {
-    min-height: 260px;
+  .table_view,
+  .table_view2 {
+    min-height: 230px;
   }
 }
 
@@ -429,28 +561,58 @@ h1 {
     height: 50px;
   }
 
+  .plate_task2 {
+    height: 50px;
+    width: 50px;
+  }
+
+  .plate_task2::before {
+    left: calc(50% - 16px);
+    top: calc(50% - 16px);
+    height: 32px;
+    width: 32px;
+  }
+
+  
+
   .table {
     width: 174px;
     height: 94px;
  }
 
- .tool {
+ .table2 {
+  width: 250px;
+  height: 94px;
+ }
+
+.table_top,
+.table_top2 {
+  padding: 15px 15px 22px 15px;
+}
+ 
+.bento1_task2, .bento2_task2 {
+  height: 40px;
+  width: 45px;
+  border-width: 6px 2px;
+}
+
+
+ .tool,
+ .tool2 {
   margin-bottom: -10px;
   margin-right: 5px;
  }
 
  .tooltip1,
- .tooltip2 {
+ .tooltip2,
+ .tooltip1_task2,
+ .tooltip2_task2,
+ .tooltip3_task2 {
   font-size: 8px;
   height: 14px;
   min-width: 40px;
   padding:  2px;
 }
-
- .table_legs {
-  height: 7px;
-  margin-top: -3px;
- }
 
  .table_legs {
   height: 7px;
