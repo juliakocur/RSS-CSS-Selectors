@@ -2,7 +2,6 @@ body {
     height: auto;
     background-color: #2e2a23;
     margin: 0;
-   
     color: rgba(255,255,255,.3);
     font-weight: 400;
     line-height: 150%;
@@ -26,7 +25,10 @@ body {
     margin: 20px 0;
 }
 
-.table_view2 {
+.table_view2,
+.table_view3,
+.table_view4,
+.table_view5  {
   width: 100%;
   min-height: 310px;
   margin: 50px 0 20px 0;
@@ -35,8 +37,9 @@ body {
 h1 {
     text-align: center;
     margin: 0;
-    font-size: 45px;
-    margin-bottom: 50px;
+    font-size: 38px;
+    margin-bottom: 20px;
+    line-height: 110%;
 }
 
 .editor,
@@ -88,9 +91,7 @@ h1 {
     display: none;
 }
 
-
-.help,
-.help2 {
+.help_button {
     width: 100px;
     padding: 7px 15px 7px 15px;
     background: rgba(0,0,0,.2);
@@ -100,9 +101,7 @@ h1 {
     cursor: pointer;
 }
 
-
-.help:hover,
-.help2:hover {
+.help_button:hover {
     color: rgb(228, 222, 222);
 }
 
@@ -122,22 +121,14 @@ h1 {
   width: 410px;
 }
 
-.table_img {
+.table_img,
+.table_img2 {
     box-shadow: 0px 30px 10px rgba(0,0,0,.2);
     background: linear-gradient(#dd992d,#cd8c26);
     position: absolute;
     height: 100%;
     width: 100%;
 }
-
-.table_img2 {
-  box-shadow: 0px 30px 10px rgba(0,0,0,.2);
-  background: linear-gradient(#dd992d,#cd8c26);
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-
 
 .table_top, 
 .table_top2 {
@@ -150,9 +141,7 @@ h1 {
     animation-delay: 0s, .5s;
 }
 
-.plate_first,
-.plate_second,
-.plate_task2  {
+.plate {
     border-bottom: solid 5px #DDD;
     background: white;
     border-radius: 20px;
@@ -162,12 +151,20 @@ h1 {
     margin: 0 10px;
 }
 
-.plate_task2 {
+.plate_task2,
+.plate2_task3,
+.plate_task4,
+.plate1_task5,
+.plate2_task5 {
   width: 100px;
   position: relative;
 }
 
-.plate_task2::before {
+.plate_task2:before,
+.plate2_task3:before,
+.plate_task4:before,
+.plate1_task5:before,
+.plate2_task5:before  {
   content: "";
   position: absolute;
   left: calc(50% - 32px);
@@ -179,8 +176,7 @@ h1 {
   opacity: .4;
 }
 
-.bento1_task2,
-.bento2_task2 {
+.bento {
   width: 100px;
   height: 65px;
   background: brown;
@@ -193,11 +189,112 @@ h1 {
   transition: transform ease-out .2s;
 }
 
-.tooltip1,
-.tooltip2,
-.tooltip1_task2,
-.tooltip2_task2,
-.tooltip3_task2 {
+.sandwich1_task4,
+.sandwich2_task4 {
+    border-radius: 100px;
+    border-style: solid;
+    border-width: 0px 2px 6px 2px;
+    height: 70px;
+    width: 40px;
+    position: relative;
+    background: #dfb57e;
+    border-color: #9c5c08;
+    box-shadow: 0px 5px 0px rgba(0,0,0,.2);
+    display: inline-block;
+    margin: 0 0 15px 10px;
+}
+
+.item.sandwich1_task4:before,
+.sandwich2_task4:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgb(223 18 18 / 61%);
+  height: 45%;
+  width: 65%;
+  top: 0px;
+  left: calc(50% - 36%);
+  border-radius: 100px;
+}
+
+.sandwich2_task4 {
+  display: inline-block;
+}
+
+.sandwich1_task4 {
+  margin-left: -21%;
+  margin-right: 14%;
+}
+
+.item.sandwich1_task4:after,
+.sandwich2_task4:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgb(223 18 18 / 61%);
+  height: 50%;
+  width: 70%;
+  bottom: calc(10% - 5%);
+  left: calc(50% - 35%);
+  border-radius: 100px;
+}
+
+.item.sandwich1_task4 {
+  width: 40px;
+}
+
+.cookie_task5 {
+  border-radius: 10px;
+  border-style: dotted;
+  border-width: 4px 5px 6px 5px;
+  height: 60px;
+  width: 60px;
+  position: relative;
+  background: #dfb57e;
+  border-color: #9c5c08;
+  box-shadow: 0px 5px 0px rgba(0,0,0,.2);
+  display: inline-block;
+  margin: 0 0 14px 2px;
+}
+
+.cookie_task5:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #9c5c0866;
+  height: 80%;
+  width: 80%;
+  top: 3px;
+  left: calc(50% - 40%);
+  border-radius: 10px;
+}
+
+.sausage {
+  border-radius: 30px;
+  border-width: 2px 2px 40px 2px;
+  height: 90px;
+  width: 20px;
+  position: relative;
+  background: #e1705d;
+  box-shadow: 0px 5px 0px rgba(0,0,0,.2);
+  display: inline-block;
+  margin: 0 0 15px 1px;
+  z-index: 10;
+}
+
+.sausage:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgb(255 255 255 / 30%);
+  height: 90%;
+  width: 15%;
+  top: 0px;
+  left: calc(50% - 15%);
+  border-radius: 100px;
+}
+
+.tooltip {
   display: block;
   min-width: 80px;
   height: 20px;
@@ -251,7 +348,8 @@ h1 {
 }
 
 .plate_first:before,
-.plate_second:before {
+.plate_second:before,
+.plate1_task3:before {
     content: "";
     position: absolute;
     left: calc(50% - 32px);
@@ -262,6 +360,19 @@ h1 {
     border-top: solid 6px #CCC;
     opacity: .4;
     background: rgba(255,255,255,1);
+}
+
+.plate1_task3:after,
+.plate1_task5:after {
+    content: "";
+    height: 68px;
+    width: 74px;
+    position: absolute;
+    left: calc(50% - 47px);
+    top: calc(50% - 44px);
+    border-radius: 60px;
+    border: solid 10px #009ff2;
+    opacity: .4;
 }
 
   @keyframes itemStart {
@@ -444,15 +555,10 @@ h1 {
     text-align: left;
   }
 
-  .plate1:hover,
-  .plate2:hover,
-  .bento1:hover,
-  .bento2:hover,
-  .plate3:hover {
-    color: rgba(255,255,255,.6);
+.white:hover {
+    color: white;
   }
 
- 
   @media (max-width: 968px) {
     .panel {
         overflow-y: auto;
@@ -460,26 +566,43 @@ h1 {
   } 
 
   @media (max-width: 820px) {
-    .plate_first,
-    .plate_second,
-    .plate_task2 {
+    .plate {
       height: 66px;
     }
 
-    .bento1_task2,
-    .bento2_task2 {
+    .plate1_task3:after,
+    .plate1_task5:after {
+    height: 45px;
+    width: 45px;
+    left: calc(50% - 28px);
+    top: calc(50% - 28px);
+    border: solid 5px #009ff2;
+    }
+
+    .bento {
     height: 50px;
+    border-width: 10px 2px;
   }
 
-   .bento1_task2, 
-   .bento2_task2 {
-     border-width: 10px 2px;
-   }
-    .plate_task2 {
+    .bento_task3,
+    .bento_task4,
+    .bento_task5 {
+      width: 60px;
+    }
+
+    .plate_task2,
+    .plate2_task3,
+    .plate_task4,
+    .plate1_task5,
+    .plate2_task5 {
       width: 66px;
     }
 
-    .plate_task2::before {
+    .plate_task2:before,
+    .plate2_task3:before,
+    .plate_task4:before,
+    .plate1_task5:before,
+    .plate2_task5:before  {
       left: calc(50% - 22px);
       top: calc(50% - 22px);
       height: 42px;
@@ -490,12 +613,45 @@ h1 {
       width: 60px;
     }
 
+    /*
     .item:before {
       left: calc(50% - 22px);
       top: calc(50% - 22px);
       height: 42px;
       width: 42px;
     }
+*/
+
+    .item.sandwich1_task4 {
+      width: 27px;
+    }
+
+    .item.sausage {
+      width: 15px;
+    }
+
+    .sausage {
+      width: 15px;
+      height: 60px;
+      margin: 0 0 11px 1px;
+    }
+
+    .sandwich1_task4, .sandwich2_task4 {
+      height: 45px;
+      width: 27px;
+    }
+
+    .cookie_task5 {
+      border-radius: 7px;
+      border-width: 2px 3px 4px 4px;
+      height: 40px;
+      width: 40px;
+      margin: 0 0 15px 2px;
+  }
+
+  .cookie_task5:before {
+    border-radius: 7px;
+  }
 
     .table {
       width: 214px;
@@ -509,15 +665,14 @@ h1 {
       transform: perspective(400px) rotateX(20deg);
     }
 
-    .table_view2 {
+    .table_view2,
+    .table_view3,
+    .table_view4,
+    .table_view5  {
       margin: 20px 0;
     }
 
-    .tooltip1,
-    .tooltip2,
-    .tooltip1_task2,
-    .tooltip2_task2,
-    .tooltip3_task2 {
+    .tooltip {
       font-size: 12px;
       height: 16px;
     }
@@ -534,7 +689,10 @@ h1 {
   }
 
   .table_view,
-  .table_view2 {
+  .table_view2,
+  .table_view3,
+  .table_view4,
+  .table_view5  {
     min-height: 230px;
   }
 }
@@ -543,37 +701,69 @@ h1 {
 
   .editor_header {
     padding: 5px;
-    }
-
+  }
+/*
   .item:before {
     left: calc(50% - 16px);
     top: calc(50% - 16px);
     height: 32px;
     width: 32px;
   }
-
+*/
   .item {
     width: 50px;
   }
 
+  .sausage1_task5:before {
+    width: 20%;
+    left: calc(50% - 25%);
+  }
+
+  .sausage {
+    margin: 0 0 7px 1px;
+}
+
   .plate_first,
-  .plate_second {
+  .plate_second,
+  .plate1_task3 {
     height: 50px;
   }
 
-  .plate_task2 {
+  .plate_task2,
+  .plate2_task3,
+  .plate_task4,
+  .plate1_task5,
+  .plate2_task5 {
     height: 50px;
     width: 50px;
   }
 
-  .plate_task2::before {
+  .plate1_task3:after,
+  .plate1_task5:after {
+    height: 35px;
+    width: 35px;
+    left: calc(50% - 22px);
+    top: calc(50% - 22px);
+    border: solid 4px #009ff2;
+}
+
+  .plate_task2:before,
+  .plate2_task3:before,
+  .plate_task4:before,
+  .plate1_task5:before,
+  .plate2_task5:before {
     left: calc(50% - 16px);
     top: calc(50% - 16px);
     height: 32px;
     width: 32px;
   }
 
-  
+  .cookie_task5 {
+    border-width: 1px 2px 3px 2px;
+    height: 30px;
+    width: 30px;
+    margin: 2px 0 13px 2px;
+}
 
   .table {
     width: 174px;
@@ -590,12 +780,11 @@ h1 {
   padding: 15px 15px 22px 15px;
 }
  
-.bento1_task2, .bento2_task2 {
+.bento {
   height: 40px;
   width: 45px;
   border-width: 6px 2px;
 }
-
 
  .tool,
  .tool2 {
@@ -603,15 +792,36 @@ h1 {
   margin-right: 5px;
  }
 
- .tooltip1,
- .tooltip2,
- .tooltip1_task2,
- .tooltip2_task2,
- .tooltip3_task2 {
+ .tooltip {
   font-size: 8px;
   height: 14px;
   min-width: 40px;
   padding:  2px;
+}
+
+.item.sandwich1_task4 {
+  width: 21px;
+}
+
+.sandwich1_task4, .sandwich2_task4 {
+  height: 35px;
+  width: 21px;
+  border-width: 0px 1px 4px 1px;
+  margin-bottom: 10px;
+  box-shadow: 0px 3px 0px rgba(0,0,0,.2);
+}
+
+.sandwich1_task4 {
+  margin-left: -22%;
+}
+
+.item.sausage {
+  width: 10px;
+}
+
+.sausage {
+  width: 10px;
+  height: 45px;
 }
 
  .table_legs {

@@ -10,18 +10,18 @@
     <div class="wrapier">
         <div class="panel">
             <div class="header">CSS Diner</div>
-            <div class="table_view">
+            <div class="table_view none">
                 <h1>Select the plates</h1>
-                <button class="help">HELP</button>
+                <button class="help_button help">HELP</button>
                 <div class="tool">
-                    <span class="tooltip1">&ltplate&gt&lt/plate&gt</span>
-                    <span class="tooltip2">&ltplate&gt&lt/plate&gt</span>
+                    <span class="tooltip tooltip1">&ltplate&gt&lt/plate&gt</span>
+                    <span class="tooltip tooltip2">&ltplate&gt&lt/plate&gt</span>
                 </div>
                 <div class="table">
                     <div class="table_img"></div>
                     <div class="table_top">
-                        <div class="item plate_first"></div>
-                        <div class="item plate_second"></div>
+                        <div class="item plate plate_first"></div>
+                        <div class="item plate plate_second"></div>
                     </div>
                     <div class="table_legs">
                         <div class="first_leg"></div>
@@ -31,18 +31,90 @@
             </div>
             <div class="table_view2 none">
                 <h1>Select the bento boxes</h1>
-                <button class="help2">HELP</button>
+                <button class="help_button help2">HELP</button>
                 <div class="tool2">
-                    <span class="tooltip1_task2">&ltbento&gt&lt/bento&gt</span>
-                    <span class="tooltip2_task2">&ltplate&gt&lt/plate&gt</span>
-                    <span class="tooltip3_task2">&ltbento&gt&lt/bento&gt</span>
+                    <span class="tooltip tooltip1_task2">&ltbento&gt&lt/bento&gt</span>
+                    <span class="tooltip tooltip2_task2">&ltplate&gt&lt/plate&gt</span>
+                    <span class="tooltip tooltip3_task2">&ltbento&gt&lt/bento&gt</span>
                 </div>
                 <div class="table2">
                     <div class="table_img2"></div>
                     <div class="table_top2">
-                        <div class="item bento1_task2"></div>
-                        <div class="plate_task2"></div>
-                        <div class="item bento2_task2"></div>
+                        <div class="item bento bento1_task2"></div>
+                        <div class="plate plate_task2"></div>
+                        <div class="item bento bento2_task2"></div>
+                    </div>
+                    <div class="table_legs">
+                        <div class="first_leg"></div>
+                        <div class="second_leg"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="table_view3 none">
+                <h1>Select the fancy plate</h1>
+                <button class="help_button help3">HELP</button>
+                <div class="tool2">
+                    <span class="tooltip tooltip1_task3">&ltplate id="fancy"&gt&lt/plate&gt</span>
+                    <span class="tooltip tooltip2_task3">&ltplate&gt&lt/plate&gt</span>
+                    <span class="tooltip tooltip3_task3">&ltbento&gt&lt/bento&gt</span>
+                </div>
+                <div class="table2">
+                    <div class="table_img2"></div>
+                    <div class="table_top2">
+                        <div class="item plate plate1_task3"></div>
+                        <div class="plate plate2_task3"></div>
+                        <div class="bento bento_task3"></div>
+                    </div>
+                    <div class="table_legs">
+                        <div class="first_leg"></div>
+                        <div class="second_leg"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="table_view4 none">
+                <h1>Select the sandwich on the plate</h1>
+                <button class="help_button help4">HELP</button>
+                <div class="tool2">
+                    <span class="tooltip tooltip4_task4">&ltsandwich&gt&lt/sandwich&gt</span>
+                </div>
+                <div class="tool2">
+                    <span class="tooltip tooltip1_task4">&ltbento&gt&lt/bento&gt</span>
+                    <span class="tooltip tooltip2_task4">&ltplate&gt&lt/plate&gt</span>
+                    <span class="tooltip tooltip3_task4">&ltsandwich&gt&lt/sandwich&gt</span>
+                </div>
+                <div class="table2">
+                    <div class="table_img2"></div>
+                    <div class="table_top2">
+                        <div class="bento bento_task4"></div>
+                        <div class="plate plate_task4"></div>
+                        <div class="item sandwich1_task4"></div>
+                        <div class="sandwich2_task4"></div>
+                    </div>
+                    <div class="table_legs">
+                        <div class="first_leg"></div>
+                        <div class="second_leg"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="table_view5">
+                <h1>Select the sausage on the fancy plate</h1>
+                <button class="help_button help5">HELP</button>
+                <div class="tool2">
+                    <span class="tooltip tooltip1_task5">&ltcookie&gt&lt/cookie&gt</span>
+                    <span class="tooltip tooltip2_task5">&ltsausage&gt&lt/sausage&gt</span>
+                    <span class="tooltip tooltip3_task5">&ltsausage&gt&lt/sausage&gt</span>
+                </div>
+                <div class="tool2">
+                    <span class="tooltip tooltip4_task5">&ltbento&gt&lt/bento&gt</span>
+                    <span class="tooltip tooltip5_task5">&ltplate&gt&lt/plate&gt</span>
+                    <span class="tooltip tooltip6_task5">&ltplate&gt&lt/plate&gt</span>
+                </div>
+                <div class="table2">
+                    <div class="table_img2"></div>
+                    <div class="table_top2">
+                        <div class="bento bento_task5"><div class="cookie_task5"></div></div>
+                        <div class="plate plate1_task5"><div class="item sausage sausage1_task5"></div></div>
+                        <div class="plate plate2_task5"><div class="sausage sausage2_task5"></div></div>
                     </div>
                     <div class="table_legs">
                         <div class="first_leg"></div>
@@ -79,14 +151,14 @@
                             <div class="editor_right_numbers">
                                 1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20
                             </div>
-                            <div class="editor_right_code">
+                            <div class="editor_right_code none">
                                 <div class="right_text">
                                     &ltdiv class="table"&gt
                                 </div>
-                                <div class="right_text plate1">
+                                <div class="right_text white plate1">
                                     &nbsp&nbsp&nbsp&nbsp&ltplate /&gt
                                 </div>
-                                <div class="right_text plate2">
+                                <div class="right_text white plate2">
                                     &nbsp&nbsp&nbsp&nbsp&ltplate /&gt
                                 </div>
                                 <div class="right_text">
@@ -97,19 +169,96 @@
                                 <div class="right_text">
                                     &ltdiv class="table"&gt
                                 </div>
-                                <div class="right_text bento1">
+                                <div class="right_text white bento1">
                                     &nbsp&nbsp&nbsp&nbsp&ltbento /&gt
                                 </div>
-                                <div class="right_text plate3">
+                                <div class="right_text white plate3">
                                     &nbsp&nbsp&nbsp&nbsp&ltplate /&gt
                                 </div>
-                                <div class="right_text bento2">
+                                <div class="right_text white bento2">
                                     &nbsp&nbsp&nbsp&nbsp&ltbento /&gt
                                 </div>
                                 <div class="right_text">
                                     &lt/div&gt
                                 </div>
                             </div>
+                            <div class="editor_right_code3 none">
+                                <div class="right_text">
+                                    &ltdiv class="table"&gt
+                                </div>
+                                <div class="right_text white plate4">
+                                    &nbsp&nbsp&nbsp&nbsp&ltplate id="fancy" /&gt
+                                </div>
+                                <div class="right_text white plate5">
+                                    &nbsp&nbsp&nbsp&nbsp&ltplate /&gt
+                                </div>
+                                <div class="right_text white bento3">
+                                    &nbsp&nbsp&nbsp&nbsp&ltbento /&gt
+                                </div>
+                                <div class="right_text">
+                                    &lt/div&gt
+                                </div>
+                            </div>
+                            <div class="editor_right_code4 none">
+                                <div class="right_text">
+                                    &ltdiv class="table"&gt
+                                </div>
+                                <div class="right_text white bento4">
+                                    &nbsp&nbsp&nbsp&nbsp&ltbento /&gt
+                                </div>
+                                <div class="right_text white plate7">
+                                    &nbsp&nbsp&nbsp&nbsp&ltplate /&gt
+                                </div>
+                                <div class="right_text white sandwich1">
+                                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltsandwich /&gt
+                                </div>
+                                <div class="right_text white plate8">
+                                    &nbsp&nbsp&nbsp&nbsp&ltplate /&gt
+                                </div>
+                                <div class="right_text white sandwich2">
+                                    &nbsp&nbsp&nbsp&nbsp&ltsandwich /&gt
+                                </div>
+                                <div class="right_text">
+                                    &lt/div&gt
+                                </div>
+                            </div>
+
+                            <div class="editor_right_code5">
+                                <div class="right_text">
+                                    &ltdiv class="table"&gt
+                                </div>
+                                <div class="right_text white bento5">
+                                    &nbsp&nbsp&nbsp&nbsp&ltbento&gt
+                                </div>
+                                <div class="right_text white cookie1">
+                                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltcookie /&gt
+                                </div>
+                                <div class="right_text white bento5">
+                                    &nbsp&nbsp&nbsp&nbsp&lt/bento&gt
+                                </div>
+                                <div class="right_text white plate9">
+                                   &nbsp&nbsp&nbsp&nbsp&ltplate id="fancy"&gt
+                                </div>
+                                <div class="right_text white sausage1">
+                                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltsausage /&gt
+                                </div>
+                                <div class="right_text white plate10">
+                                    &nbsp&nbsp&nbsp&nbsp&lt/plate&gt
+                                </div>
+                                <div class="right_text white plate11">
+                                    &nbsp&nbsp&nbsp&nbsp&ltplate&gt
+                                 </div>
+                                 <div class="right_text white sausage2">
+                                     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltsausage /&gt
+                                 </div>
+                                 <div class="right_text white plate12">
+                                     &nbsp&nbsp&nbsp&nbsp&lt/plate&gt
+                                 </div>
+                                <div class="right_text">
+                                    &lt/div&gt
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -148,14 +297,14 @@
                     <ul class="level_list">
                         <li class="level_item level1">1&nbsp&nbsp&nbspA</li>
                         <li class="level_item level2">2&nbsp&nbsp&nbspA</li>
-                        <li class="level_item level3">3</li>
-                        <li class="level_item level4">4</li>
-                        <li class="level_item level5">5</li>
-                        <li class="level_item level6">6</li>
-                        <li class="level_item level7">7</li>
-                        <li class="level_item level8">8</li>
-                        <li class="level_item level9">9</li>
-                        <li class="level_item level10">10</li>
+                        <li class="level_item level3">3&nbsp&nbsp&nbsp#id</li>
+                        <li class="level_item level4">4&nbsp&nbsp&nbspA B</li>
+                        <li class="level_item level5">5&nbsp&nbsp&nbsp#id A</li>
+                        <li class="level_item level6">6&nbsp&nbsp&nbsp.classname</li>
+                        <li class="level_item level7">7&nbsp&nbsp&nbspA.className</li>
+                        <li class="level_item level8">8&nbsp&nbsp&nbspPut your back into it!</li>
+                        <li class="level_item level9">9&nbsp&nbsp&nbspA, B</li>
+                        <li class="level_item level10">10&nbsp&nbsp&nbsp*</li>
                     </ul>
                 </div> 
                 <button class="reset">RESET</button>
@@ -171,7 +320,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="task">
+                <div class="task none">
                     <p class="selector">Type selector</p>
                     <p class="title">Select elements by their type.</h2>
                     <p class="letter">A</p>
@@ -185,6 +334,49 @@
                     <p class="examples_text">
                         p selects all &ltp&gt elements.
                     </p>
+                </div>
+                <div class="task3 none">
+                    <p class="selector">ID selector</p>
+                    <p class="title">Select elements with an ID</h2>
+                    <p class="letter">#id</p>
+                    <p class="task_text">
+                        Selects the elements with a specific id. You can also combine the ID selector with the type selector.
+                    </p>
+                    <p class="examples">Examples</p>
+                    <p class="examples_text">
+                        #cool selects any element with id="cool"
+                    </p>
+                    <p class="examples_text">
+                        ul#long selects &ltul id="long"&gt
+                    </p>
+                </div>
+                <div class="task4 none">
+                    <p class="selector">Descendant Selector</p>
+                    <p class="title">Select an element inside another element</h2>
+                    <p class="letter">A B</p>
+                    <p class="task_text">
+                        Selects all B inside of A. B is called a descendant because it is inside of another element.
+                    </p>
+                    <p class="examples">Examples</p>
+                    <p class="examples_text">
+                        p strong selects all  &ltstrong&gt that are inside of any &ltp&gt
+                    </p>
+                    <p class="examples_text">
+                        #fancy  span selects any &ltspan&gt  elements that are inside of the element with id="fancy"
+                    </p>
+                </div>
+                <div class="task5">
+                    <p class="selector"></p>
+                    <p class="title">Combine the Descendant & ID Selectors</h2>
+                    <p class="letter">#id A</p>
+                    <p class="task_text">
+                        You can combine any selector with the descendent selector.
+                    </p>
+                    <p class="examples">Examples</p>
+                    <p class="examples_text">
+                        #cool span selects all  &ltspan&gt elements that are inside of elements with id="cool"
+                    </p>
+                    <p class="examples_text"></p>
                 </div>
             </div>
         </div>
