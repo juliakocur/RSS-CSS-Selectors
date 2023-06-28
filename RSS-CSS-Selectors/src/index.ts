@@ -144,7 +144,6 @@ const plateFirst = <HTMLElement>document.querySelector('.plate_first');
 const plateSecond = <HTMLElement>document.querySelector('.plate_second');
 const enter = <HTMLElement>document.querySelector('.enter');
 const input = <HTMLInputElement>document.querySelector('.input_code');
-const mark = <HTMLElement>document.querySelector('.mark');
 const mark1 = <HTMLElement>document.querySelector('.mark1');
 const mark2 = <HTMLElement>document.querySelector('.mark2');
 const mark3 = <HTMLElement>document.querySelector('.mark3');
@@ -1661,7 +1660,6 @@ function removeLevel1(): void {
         } else {
             bento1Img.classList.remove('up');
             bento2Img.classList.remove('up');
-            mark.classList.add('green');
             mark1.classList.add('green');
             code1.classList.add('none');
             table1.classList.add('none');
@@ -1690,7 +1688,6 @@ function removeLevel2(): void {
             win();
         } else {
             plate1Task3Img.classList.remove('up');
-            mark.classList.add('green');
             mark2.classList.add('green');
             code2.classList.add('none');
             table2.classList.add('none');
@@ -1721,7 +1718,6 @@ function removeLevel3(): void {
             win();
         } else {
             sandwich1Task4Img.classList.remove('up');
-            mark.classList.add('green');
             mark3.classList.add('green');
             code3.classList.add('none');
             table3.classList.add('none');
@@ -1752,7 +1748,6 @@ function removeLevel4(): void {
             win();
         } else {
             sausage1Task5Img.classList.remove('up');
-            mark.classList.add('green');
             mark4.classList.add('green');
             code4.classList.add('none');
             table4.classList.add('none');
@@ -1784,7 +1779,6 @@ function removeLevel5(): void {
         } else {
             sandwich2Task6Img.classList.remove('up');
             sandwich3Task6Img.classList.remove('up');
-            mark.classList.add('green');
             mark5.classList.add('green');
             code5.classList.add('none');
             table5.classList.add('none');
@@ -1816,7 +1810,6 @@ function removeLevel6(): void {
         } else {
             cookie1Task7Img.classList.remove('up');
             cookie3Task7Img.classList.remove('up');
-            mark.classList.add('green');
             mark6.classList.add('green');
             code6.classList.add('none');
             table6.classList.add('none');
@@ -1848,7 +1841,6 @@ function removeLevel7(): void {
         } else {
             cookie3Task8Img.classList.remove('up');
             cookie4Task8Img.classList.remove('up');
-            mark.classList.add('green');
             mark7.classList.add('green');
             code7.classList.add('none');
             table7.classList.add('none');
@@ -1919,7 +1911,6 @@ function removeLevel9(): void {
             sandwichTask10Img.classList.remove('up');
             cookie1Task10Img.classList.remove('up');
             cookie2Task10Img.classList.remove('up');
-            mark.classList.add('green');
             mark9.classList.add('green');
             code9.classList.add('none');
             table9.classList.add('none');
@@ -1951,7 +1942,6 @@ function removeLevel10(): void {
         } else {
             plateFirst.classList.remove('up');
             plateSecond.classList.remove('up');
-            mark.classList.add('green');
             mark10.classList.add('green');
             code10.classList.add('none');
             table10.classList.add('none');

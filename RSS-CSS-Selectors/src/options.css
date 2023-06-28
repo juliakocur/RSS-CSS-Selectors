@@ -89,16 +89,6 @@ span.three.span_three {
     cursor: pointer;
 }
 
-.mark {
-    border: solid 3px rgba(255,255,255,.3);
-    /*#4cbb4a*/
-    border-width: 0 4px 4px 0;
-    width: 12px;
-    height: 20px;
-    margin-top: 7px;
-    transform: rotate(40deg);
-}
-
 .level_mark {
     border: solid 3px rgba(255,255,255,.3);
     border-width: 0 4px 4px 0;
@@ -119,54 +109,8 @@ span.three.span_three {
     margin: 14px 0;
 }
 
-.level_nav {
-    width: 40px;
-    position: relative;
-}
-
-.level_wrap {
-    position: absolute;
-    right: 110px;
-    top: 15px;
-}
-
 .level_item:hover {
     color:rgba(255,255,255,.6);
-}
-
-.prev:after {
-    transform: rotate(-135deg);
-
-    right: 2px;
-    content: "";
-    height: 18px;
-    width: 18px;
-    position: absolute;
-    border: solid 2px  rgba(255,255,255,.6);
-    border-width: 2px 2px 0 0;
-    transform-origin: center center;
-    top: 6px;
-    box-sizing: border-box;
-}
-
-.next:after {
-    transform: rotate(45deg);
-    left: 2px;
-    content: "";
-    height: 18px;
-    width: 18px;
-    position: absolute;
-    border: solid 2px  rgba(255,255,255,.6);
-    border-width: 2px 2px 0 0;
-    transform-origin: center center;
-    top: 6px;
-    box-sizing: border-box;
-}
-
-.prev:hover.prev:after,
-.next:hover.next:after{
-    border: solid 2px  rgb(228, 222, 222);
-    border-width: 2px 2px 0 0;
 }
 
 .task, 
@@ -288,21 +232,6 @@ span.three.span_three {
     font-size: 18px;
  }
 
- .level_wrap {
-    right: 100px;
- }
-
- .mark {
-    width: 7px;
-    height: 16px;
- }
-
- .prev:after,
- .next:after {
-    height: 14px;
-    width: 14px;
- }
-
  .header__burger-btn {
     width: 20px;
     height: 20px;
@@ -382,24 +311,6 @@ span.three.span_three {
     .level,
     .level_choose {
         font-size: 14px;
-    }
-
-    .level_wrap {
-        right: 75px;
-    }
-
-    .mark {
-        width: 6px;
-        height: 12px;
-        border-width: 0 2px 2px 0;
-        margin-top: 8px;
-    }
-
-    .prev:after, 
-    .next:after {
-        height: 10px;
-        width: 10px;
-        top: 7px;
     }
 
     .letter8 {
