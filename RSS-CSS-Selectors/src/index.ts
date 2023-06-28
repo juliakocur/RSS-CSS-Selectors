@@ -1646,21 +1646,20 @@ function win(): void {
 function removeLevel1(): void {
     setTimeout(function rem() {
         if (
-            mark2.classList.contains('green') &&
-            mark3.classList.contains('green') &&
-            mark4.classList.contains('green') &&
-            mark5.classList.contains('green') &&
-            mark6.classList.contains('green') &&
-            mark7.classList.contains('green') &&
-            mark8.classList.contains('green') &&
-            mark9.classList.contains('green') &&
-            mark10.classList.contains('green')
+            mark2.classList.contains('done') &&
+            mark3.classList.contains('done') &&
+            mark4.classList.contains('done') &&
+            mark5.classList.contains('done') &&
+            mark6.classList.contains('done') &&
+            mark7.classList.contains('done') &&
+            mark8.classList.contains('done') &&
+            mark9.classList.contains('done') &&
+            mark10.classList.contains('done')
         ) {
             win();
         } else {
             bento1Img.classList.remove('up');
             bento2Img.classList.remove('up');
-            mark1.classList.add('green');
             code1.classList.add('none');
             table1.classList.add('none');
             code2.classList.remove('none');
@@ -1675,20 +1674,19 @@ function removeLevel1(): void {
 function removeLevel2(): void {
     setTimeout(function rem() {
         if (
-            mark1.classList.contains('green') &&
-            mark3.classList.contains('green') &&
-            mark4.classList.contains('green') &&
-            mark5.classList.contains('green') &&
-            mark6.classList.contains('green') &&
-            mark7.classList.contains('green') &&
-            mark8.classList.contains('green') &&
-            mark9.classList.contains('green') &&
-            mark10.classList.contains('green')
+            mark1.classList.contains('done') &&
+            mark3.classList.contains('done') &&
+            mark4.classList.contains('done') &&
+            mark5.classList.contains('done') &&
+            mark6.classList.contains('done') &&
+            mark7.classList.contains('done') &&
+            mark8.classList.contains('done') &&
+            mark9.classList.contains('done') &&
+            mark10.classList.contains('done')
         ) {
             win();
         } else {
             plate1Task3Img.classList.remove('up');
-            mark2.classList.add('green');
             code2.classList.add('none');
             table2.classList.add('none');
             code3.classList.remove('none');
@@ -1705,20 +1703,19 @@ function removeLevel2(): void {
 function removeLevel3(): void {
     setTimeout(function rem() {
         if (
-            mark1.classList.contains('green') &&
-            mark2.classList.contains('green') &&
-            mark4.classList.contains('green') &&
-            mark5.classList.contains('green') &&
-            mark6.classList.contains('green') &&
-            mark7.classList.contains('green') &&
-            mark8.classList.contains('green') &&
-            mark9.classList.contains('green') &&
-            mark10.classList.contains('green')
+            mark1.classList.contains('done') &&
+            mark2.classList.contains('done') &&
+            mark4.classList.contains('done') &&
+            mark5.classList.contains('done') &&
+            mark6.classList.contains('done') &&
+            mark7.classList.contains('done') &&
+            mark8.classList.contains('done') &&
+            mark9.classList.contains('done') &&
+            mark10.classList.contains('done')
         ) {
             win();
         } else {
             sandwich1Task4Img.classList.remove('up');
-            mark3.classList.add('green');
             code3.classList.add('none');
             table3.classList.add('none');
             code4.classList.remove('none');
@@ -1735,20 +1732,19 @@ function removeLevel3(): void {
 function removeLevel4(): void {
     setTimeout(function rem() {
         if (
-            mark1.classList.contains('green') &&
-            mark2.classList.contains('green') &&
-            mark3.classList.contains('green') &&
-            mark5.classList.contains('green') &&
-            mark6.classList.contains('green') &&
-            mark7.classList.contains('green') &&
-            mark8.classList.contains('green') &&
-            mark9.classList.contains('green') &&
-            mark10.classList.contains('green')
+            mark1.classList.contains('done') &&
+            mark2.classList.contains('done') &&
+            mark3.classList.contains('done') &&
+            mark5.classList.contains('done') &&
+            mark6.classList.contains('done') &&
+            mark7.classList.contains('done') &&
+            mark8.classList.contains('done') &&
+            mark9.classList.contains('done') &&
+            mark10.classList.contains('done')
         ) {
             win();
         } else {
             sausage1Task5Img.classList.remove('up');
-            mark4.classList.add('green');
             code4.classList.add('none');
             table4.classList.add('none');
             code5.classList.remove('none');
@@ -1765,21 +1761,20 @@ function removeLevel4(): void {
 function removeLevel5(): void {
     setTimeout(function rem() {
         if (
-            mark1.classList.contains('green') &&
-            mark2.classList.contains('green') &&
-            mark3.classList.contains('green') &&
-            mark4.classList.contains('green') &&
-            mark6.classList.contains('green') &&
-            mark7.classList.contains('green') &&
-            mark8.classList.contains('green') &&
-            mark9.classList.contains('green') &&
-            mark10.classList.contains('green')
+            mark1.classList.contains('done') &&
+            mark2.classList.contains('done') &&
+            mark3.classList.contains('done') &&
+            mark4.classList.contains('done') &&
+            mark6.classList.contains('done') &&
+            mark7.classList.contains('done') &&
+            mark8.classList.contains('done') &&
+            mark9.classList.contains('done') &&
+            mark10.classList.contains('done')
         ) {
             win();
         } else {
             sandwich2Task6Img.classList.remove('up');
             sandwich3Task6Img.classList.remove('up');
-            mark5.classList.add('green');
             code5.classList.add('none');
             table5.classList.add('none');
             code6.classList.remove('none');
@@ -1796,21 +1791,20 @@ function removeLevel5(): void {
 function removeLevel6(): void {
     setTimeout(function rem() {
         if (
-            mark1.classList.contains('green') &&
-            mark2.classList.contains('green') &&
-            mark3.classList.contains('green') &&
-            mark4.classList.contains('green') &&
-            mark5.classList.contains('green') &&
-            mark7.classList.contains('green') &&
-            mark8.classList.contains('green') &&
-            mark9.classList.contains('green') &&
-            mark10.classList.contains('green')
+            mark1.classList.contains('done') &&
+            mark2.classList.contains('done') &&
+            mark3.classList.contains('done') &&
+            mark4.classList.contains('done') &&
+            mark5.classList.contains('done') &&
+            mark7.classList.contains('done') &&
+            mark8.classList.contains('done') &&
+            mark9.classList.contains('done') &&
+            mark10.classList.contains('done')
         ) {
             win();
         } else {
             cookie1Task7Img.classList.remove('up');
             cookie3Task7Img.classList.remove('up');
-            mark6.classList.add('green');
             code6.classList.add('none');
             table6.classList.add('none');
             code7.classList.remove('none');
@@ -1827,21 +1821,20 @@ function removeLevel6(): void {
 function removeLevel7(): void {
     setTimeout(function rem() {
         if (
-            mark1.classList.contains('green') &&
-            mark2.classList.contains('green') &&
-            mark3.classList.contains('green') &&
-            mark4.classList.contains('green') &&
-            mark5.classList.contains('green') &&
-            mark6.classList.contains('green') &&
-            mark8.classList.contains('green') &&
-            mark9.classList.contains('green') &&
-            mark10.classList.contains('green')
+            mark1.classList.contains('done') &&
+            mark2.classList.contains('done') &&
+            mark3.classList.contains('done') &&
+            mark4.classList.contains('done') &&
+            mark5.classList.contains('done') &&
+            mark6.classList.contains('done') &&
+            mark8.classList.contains('done') &&
+            mark9.classList.contains('done') &&
+            mark10.classList.contains('done')
         ) {
             win();
         } else {
             cookie3Task8Img.classList.remove('up');
             cookie4Task8Img.classList.remove('up');
-            mark7.classList.add('green');
             code7.classList.add('none');
             table7.classList.add('none');
             code8.classList.remove('none');
@@ -1858,15 +1851,15 @@ function removeLevel7(): void {
 function removeLevel8(): void {
     setTimeout(function rem() {
         if (
-            mark1.classList.contains('green') &&
-            mark2.classList.contains('green') &&
-            mark3.classList.contains('green') &&
-            mark4.classList.contains('green') &&
-            mark5.classList.contains('green') &&
-            mark6.classList.contains('green') &&
-            mark7.classList.contains('green') &&
-            mark9.classList.contains('green') &&
-            mark10.classList.contains('green')
+            mark1.classList.contains('done') &&
+            mark2.classList.contains('done') &&
+            mark3.classList.contains('done') &&
+            mark4.classList.contains('done') &&
+            mark5.classList.contains('done') &&
+            mark6.classList.contains('done') &&
+            mark7.classList.contains('done') &&
+            mark9.classList.contains('done') &&
+            mark10.classList.contains('done')
         ) {
             win();
         } else {
@@ -1875,8 +1868,6 @@ function removeLevel8(): void {
             sausage3Task9Img.classList.remove('up');
             sausage4Task9Img.classList.remove('up');
             sausage5Task9Img.classList.remove('up');
-            mark.classList.add('green');
-            mark8.classList.add('green');
             code8.classList.add('none');
             table8.classList.add('none');
             code9.classList.remove('none');
@@ -1893,15 +1884,15 @@ function removeLevel8(): void {
 function removeLevel9(): void {
     setTimeout(function rem() {
         if (
-            mark1.classList.contains('green') &&
-            mark2.classList.contains('green') &&
-            mark3.classList.contains('green') &&
-            mark4.classList.contains('green') &&
-            mark5.classList.contains('green') &&
-            mark6.classList.contains('green') &&
-            mark7.classList.contains('green') &&
-            mark8.classList.contains('green') &&
-            mark10.classList.contains('green')
+            mark1.classList.contains('done') &&
+            mark2.classList.contains('done') &&
+            mark3.classList.contains('done') &&
+            mark4.classList.contains('done') &&
+            mark5.classList.contains('done') &&
+            mark6.classList.contains('done') &&
+            mark7.classList.contains('done') &&
+            mark8.classList.contains('done') &&
+            mark10.classList.contains('done')
         ) {
             win();
         } else {
@@ -1911,7 +1902,6 @@ function removeLevel9(): void {
             sandwichTask10Img.classList.remove('up');
             cookie1Task10Img.classList.remove('up');
             cookie2Task10Img.classList.remove('up');
-            mark9.classList.add('green');
             code9.classList.add('none');
             table9.classList.add('none');
             code10.classList.remove('none');
@@ -1928,21 +1918,20 @@ function removeLevel9(): void {
 function removeLevel10(): void {
     setTimeout(function rem() {
         if (
-            mark1.classList.contains('green') &&
-            mark2.classList.contains('green') &&
-            mark3.classList.contains('green') &&
-            mark4.classList.contains('green') &&
-            mark5.classList.contains('green') &&
-            mark6.classList.contains('green') &&
-            mark7.classList.contains('green') &&
-            mark8.classList.contains('green') &&
-            mark9.classList.contains('green')
+            mark1.classList.contains('done') &&
+            mark2.classList.contains('done') &&
+            mark3.classList.contains('done') &&
+            mark4.classList.contains('done') &&
+            mark5.classList.contains('done') &&
+            mark6.classList.contains('done') &&
+            mark7.classList.contains('done') &&
+            mark8.classList.contains('done') &&
+            mark9.classList.contains('done')
         ) {
             win();
         } else {
             plateFirst.classList.remove('up');
             plateSecond.classList.remove('up');
-            mark10.classList.add('green');
             code10.classList.add('none');
             table10.classList.add('none');
             code1.classList.remove('none');
@@ -1966,36 +1955,84 @@ const bentocookieinput = 'bento cookie.small';
 const sausagesinput = 'plate, bento';
 const sausages2input = 'bento, plate';
 const allinput = '*';
+
 enter.addEventListener('click', function readInput(): void {
     if (input.value === plateinput && level.textContent === 'Level 1 of 10') {
         plateFirst.classList.add('up');
         plateSecond.classList.add('up');
+        mark1.classList.add('done');
         removeLevel1();
+        if (help.classList.contains('put')) {
+            mark1.classList.add('yellow');
+        } else {
+            mark1.classList.add('green');
+        }
     } else if (input.value === bentoinput && level.textContent === 'Level 2 of 10') {
         bento1Img.classList.add('up');
         bento2Img.classList.add('up');
+        mark2.classList.add('done');
         removeLevel2();
+        if (help2.classList.contains('put')) {
+            mark2.classList.add('yellow');
+        } else {
+            mark2.classList.add('green');
+        }
     } else if (input.value === fancyinput && level.textContent === 'Level 3 of 10') {
         plate1Task3Img.classList.add('up');
+        mark3.classList.add('done');
         removeLevel3();
+        if (help3.classList.contains('put')) {
+            mark3.classList.add('yellow');
+        } else {
+            mark3.classList.add('green');
+        }
     } else if (input.value === sandwichinput && level.textContent === 'Level 4 of 10') {
         sandwich1Task4Img.classList.add('up');
         removeLevel4();
+        if (help4.classList.contains('put')) {
+            mark4.classList.add('yellow');
+        } else {
+            mark4.classList.add('green');
+        }
     } else if (input.value === sausageinput && level.textContent === 'Level 5 of 10') {
         sausage1Task5Img.classList.add('up');
+        mark4.classList.add('done');
         removeLevel5();
+        if (help5.classList.contains('put')) {
+            mark5.classList.add('yellow');
+        } else {
+            mark5.classList.add('green');
+        }
     } else if (input.value === sandwsmall && level.textContent === 'Level 6 of 10') {
         sandwich2Task6Img.classList.add('up');
         sandwich3Task6Img.classList.add('up');
+        mark5.classList.add('done');
         removeLevel6();
+        if (help6.classList.contains('put')) {
+            mark6.classList.add('yellow');
+        } else {
+            mark6.classList.add('green');
+        }
     } else if (input.value === cookieinput && level.textContent === 'Level 7 of 10') {
         cookie1Task7Img.classList.add('up');
         cookie3Task7Img.classList.add('up');
+        mark6.classList.add('done');
         removeLevel7();
+        if (help7.classList.contains('put')) {
+            mark7.classList.add('yellow');
+        } else {
+            mark7.classList.add('green');
+        }
     } else if (input.value === bentocookieinput && level.textContent === 'Level 8 of 10') {
         cookie3Task8Img.classList.add('up');
         cookie4Task8Img.classList.add('up');
+        mark7.classList.add('done');
         removeLevel8();
+        if (help8.classList.contains('put')) {
+            mark8.classList.add('yellow');
+        } else {
+            mark8.classList.add('green');
+        }
     } else if (
         (input.value === sausagesinput && level.textContent === 'Level 9 of 10') ||
         (input.value === sausages2input && level.textContent === 'Level 9 of 10')
@@ -2006,7 +2043,13 @@ enter.addEventListener('click', function readInput(): void {
         sausage3Task9Img.classList.add('up');
         sausage4Task9Img.classList.add('up');
         sausage5Task9Img.classList.add('up');
+        mark9.classList.add('done');
         removeLevel9();
+        if (help9.classList.contains('put')) {
+            mark9.classList.add('yellow');
+        } else {
+            mark9.classList.add('green');
+        }
     } else if (input.value === allinput && level.textContent === 'Level 10 of 10') {
         plateTask10Img.classList.add('up');
         bento2Task10Img.classList.add('up');
@@ -2014,7 +2057,13 @@ enter.addEventListener('click', function readInput(): void {
         sandwichTask10Img.classList.add('up');
         cookie1Task10Img.classList.add('up');
         cookie2Task10Img.classList.add('up');
+        mark10.classList.add('done');
         removeLevel10();
+        if (help10.classList.contains('put')) {
+            mark10.classList.add('yellow');
+        } else {
+            mark10.classList.add('green');
+        }
     } else {
         enter.classList.add('wrong');
         wrongValue();
@@ -2025,32 +2074,80 @@ document.addEventListener('keyup', function isEnter(e): void {
     if (e.code === 'Enter' && input.value === plateinput && level.textContent === 'Level 1 of 10') {
         plateFirst.classList.add('up');
         plateSecond.classList.add('up');
+        mark1.classList.add('done');
         removeLevel1();
+        if (help.classList.contains('put')) {
+            mark1.classList.add('yellow');
+        } else {
+            mark1.classList.add('green');
+        }
     } else if (e.code === 'Enter' && input.value === bentoinput && level.textContent === 'Level 2 of 10') {
         bento1Img.classList.add('up');
         bento2Img.classList.add('up');
+        mark2.classList.add('done');
         removeLevel2();
+        if (help2.classList.contains('put')) {
+            mark2.classList.add('yellow');
+        } else {
+            mark2.classList.add('green');
+        }
     } else if (e.code === 'Enter' && input.value === fancyinput && level.textContent === 'Level 3 of 10') {
         plate1Task3Img.classList.add('up');
+        mark3.classList.add('done');
         removeLevel3();
+        if (help3.classList.contains('put')) {
+            mark3.classList.add('yellow');
+        } else {
+            mark3.classList.add('green');
+        }
     } else if (e.code === 'Enter' && input.value === sandwichinput && level.textContent === 'Level 4 of 10') {
         sandwich1Task4Img.classList.add('up');
+        mark4.classList.add('done');
         removeLevel4();
+        if (help4.classList.contains('put')) {
+            mark4.classList.add('yellow');
+        } else {
+            mark4.classList.add('green');
+        }
     } else if (e.code === 'Enter' && input.value === sausageinput && level.textContent === 'Level 5 of 10') {
         sausage1Task5Img.classList.add('up');
+        mark5.classList.add('done');
         removeLevel5();
+        if (help5.classList.contains('put')) {
+            mark5.classList.add('yellow');
+        } else {
+            mark5.classList.add('green');
+        }
     } else if (e.code === 'Enter' && input.value === sandwsmall && level.textContent === 'Level 6 of 10') {
         sandwich2Task6Img.classList.add('up');
         sandwich3Task6Img.classList.add('up');
+        mark6.classList.add('done');
         removeLevel6();
+        if (help6.classList.contains('put')) {
+            mark6.classList.add('yellow');
+        } else {
+            mark6.classList.add('green');
+        }
     } else if (e.code === 'Enter' && input.value === cookieinput && level.textContent === 'Level 7 of 10') {
         cookie1Task7Img.classList.add('up');
         cookie3Task7Img.classList.add('up');
+        mark7.classList.add('done');
         removeLevel7();
+        if (help7.classList.contains('put')) {
+            mark7.classList.add('yellow');
+        } else {
+            mark7.classList.add('green');
+        }
     } else if (e.code === 'Enter' && input.value === bentocookieinput && level.textContent === 'Level 8 of 10') {
         cookie3Task8Img.classList.add('up');
         cookie4Task8Img.classList.add('up');
+        mark8.classList.add('done');
         removeLevel8();
+        if (help8.classList.contains('put')) {
+            mark8.classList.add('yellow');
+        } else {
+            mark8.classList.add('green');
+        }
     } else if (
         (e.code === 'Enter' && input.value === sausagesinput && level.textContent === 'Level 9 of 10') ||
         (e.code === 'Enter' && input.value === sausages2input && level.textContent === 'Level 9 of 10')
@@ -2061,7 +2158,13 @@ document.addEventListener('keyup', function isEnter(e): void {
         sausage3Task9Img.classList.add('up');
         sausage4Task9Img.classList.add('up');
         sausage5Task9Img.classList.add('up');
+        mark9.classList.add('done');
         removeLevel9();
+        if (help9.classList.contains('put')) {
+            mark9.classList.add('yellow');
+        } else {
+            mark9.classList.add('green');
+        }
     } else if (e.code === 'Enter' && input.value === allinput && level.textContent === 'Level 10 of 10') {
         plateTask10Img.classList.add('up');
         bento2Task10Img.classList.add('up');
@@ -2069,7 +2172,13 @@ document.addEventListener('keyup', function isEnter(e): void {
         sandwichTask10Img.classList.add('up');
         cookie1Task10Img.classList.add('up');
         cookie2Task10Img.classList.add('up');
+        mark10.classList.add('done');
         removeLevel10();
+        if (help10.classList.contains('put')) {
+            mark10.classList.add('yellow');
+        } else {
+            mark10.classList.add('green');
+        }
     } else if (e.code === 'Enter') {
         // && input.value !== plateinput
         enter.classList.add('wrong');
@@ -2108,51 +2217,61 @@ function typeText(str: string): void {
 help.addEventListener('click', function readInput(): void {
     input.focus();
     typeText('plate');
+    help.classList.add('put');
 });
 
 help2.addEventListener('click', function readInput(): void {
     input.focus();
     typeText('bento');
+    help2.classList.add('put');
 });
 
 help3.addEventListener('click', function readInput(): void {
     input.focus();
     typeText('#fancy');
+    help3.classList.add('put');
 });
 
 help4.addEventListener('click', function readInput(): void {
     input.focus();
     typeText('plate sandwich');
+    help4.classList.add('put');
 });
 
 help5.addEventListener('click', function readInput(): void {
     input.focus();
     typeText('#fancy sausage');
+    help5.classList.add('put');
 });
 
 help6.addEventListener('click', function readInput(): void {
     input.focus();
     typeText('sandwich.small');
+    help6.classList.add('put');
 });
 
 help7.addEventListener('click', function readInput(): void {
     input.focus();
     typeText('cookie.small');
+    help7.classList.add('put');
 });
 
 help8.addEventListener('click', function readInput(): void {
     input.focus();
     typeText('bento cookie.small');
+    help8.classList.add('put');
 });
 
 help9.addEventListener('click', function readInput(): void {
     input.focus();
     typeText('plate, bento');
+    help9.classList.add('put');
 });
 
 help10.addEventListener('click', function readInput(): void {
     input.focus();
     typeText('*');
+    help10.classList.add('put');
 });
 
 // menu navigation ------------------------------------------------------------------------
@@ -2191,6 +2310,7 @@ level1.addEventListener('click', function chooseLevel(): void {
     code10.classList.add('none');
     table10.classList.add('none');
     task10.classList.add('none');
+    input.value = '';
 });
 
 level2.addEventListener('click', function chooseLevel(): void {
@@ -2227,6 +2347,7 @@ level2.addEventListener('click', function chooseLevel(): void {
     code10.classList.add('none');
     table10.classList.add('none');
     task10.classList.add('none');
+    input.value = '';
 });
 
 level3.addEventListener('click', function chooseLevel(): void {
@@ -2262,6 +2383,7 @@ level3.addEventListener('click', function chooseLevel(): void {
     code10.classList.add('none');
     table10.classList.add('none');
     task10.classList.add('none');
+    input.value = '';
 });
 
 level4.addEventListener('click', function chooseLevel(): void {
@@ -2296,6 +2418,7 @@ level4.addEventListener('click', function chooseLevel(): void {
     code10.classList.add('none');
     table10.classList.add('none');
     task10.classList.add('none');
+    input.value = '';
 });
 
 level5.addEventListener('click', function chooseLevel(): void {
@@ -2330,6 +2453,7 @@ level5.addEventListener('click', function chooseLevel(): void {
     code10.classList.add('none');
     table10.classList.add('none');
     task10.classList.add('none');
+    input.value = '';
 });
 
 level6.addEventListener('click', function chooseLevel(): void {
@@ -2365,6 +2489,7 @@ level6.addEventListener('click', function chooseLevel(): void {
     code10.classList.add('none');
     table10.classList.add('none');
     task10.classList.add('none');
+    input.value = '';
 });
 
 level7.addEventListener('click', function chooseLevel(): void {
@@ -2400,6 +2525,7 @@ level7.addEventListener('click', function chooseLevel(): void {
     code10.classList.add('none');
     table10.classList.add('none');
     task10.classList.add('none');
+    input.value = '';
 });
 
 level8.addEventListener('click', function chooseLevel(): void {
@@ -2435,6 +2561,7 @@ level8.addEventListener('click', function chooseLevel(): void {
     code10.classList.add('none');
     table10.classList.add('none');
     task10.classList.add('none');
+    input.value = '';
 });
 
 level9.addEventListener('click', function chooseLevel(): void {
@@ -2474,6 +2601,7 @@ level9.addEventListener('click', function chooseLevel(): void {
     code10.classList.add('none');
     table10.classList.add('none');
     task10.classList.add('none');
+    input.value = '';
 });
 
 level10.addEventListener('click', function chooseLevel(): void {
@@ -2513,4 +2641,5 @@ level10.addEventListener('click', function chooseLevel(): void {
     code9.classList.add('none');
     table9.classList.add('none');
     task9.classList.add('none');
+    input.value = '';
 });

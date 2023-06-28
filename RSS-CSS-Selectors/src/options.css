@@ -104,6 +104,11 @@ span.three.span_three {
     border-width: 0 4px 4px 0;
 }
 
+.yellow {
+    border: solid 3px #bbb34a;
+    border-width: 0 4px 4px 0;
+}
+
 .level_list__mark {
     padding-left: 20px;
     margin: 14px 0;
@@ -222,6 +227,16 @@ span.three.span_three {
     cursor: pointer;
 }
 
+.note {
+    margin: 20px;
+}
+
+.note_span {
+    position: relative;
+    left: 20px;
+    top: -28px;
+}
+
 .reset:hover {
     color: white;
 }
@@ -273,6 +288,7 @@ span.three.span_three {
 }
 
 @media (max-width: 650px) {
+    
     body {
       font-size: 10px;
     }
@@ -356,6 +372,12 @@ span.three.span_three {
     min-width: 18px;
     height: 24px;
     font-size: 16px;
-}
+    }
+
+    .note_span {
+        position: relative;
+        left: 20px;
+        top: -24px;
+    }
 }
 
