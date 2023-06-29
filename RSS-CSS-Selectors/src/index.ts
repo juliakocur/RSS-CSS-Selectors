@@ -154,6 +154,7 @@ const mark7 = <HTMLElement>document.querySelector('.mark7');
 const mark8 = <HTMLElement>document.querySelector('.mark8');
 const mark9 = <HTMLElement>document.querySelector('.mark9');
 const mark10 = <HTMLElement>document.querySelector('.mark10');
+const reset = <HTMLElement>document.querySelector('.reset');
 const help = <HTMLElement>document.querySelector('.help');
 const help2 = <HTMLElement>document.querySelector('.help2');
 const help3 = <HTMLElement>document.querySelector('.help3');
@@ -264,6 +265,10 @@ const task8 = <HTMLElement>document.querySelector('.task8');
 const task9 = <HTMLElement>document.querySelector('.task9');
 const task10 = <HTMLElement>document.querySelector('.task10');
 const task1and2 = <HTMLElement>document.querySelector('.task');
+const popupBody = <HTMLElement>document.querySelector('.popup_body');
+const popupShadow = <HTMLElement>document.querySelector('.popup');
+const popupClose = <HTMLElement>document.querySelector('.popup_close');
+
 // burger menu ------------------------------------------------------------------------------
 
 wrap.addEventListener('click', function closeMenu(): void {
@@ -1640,7 +1645,8 @@ const enum Lev {
 }
 
 function win(): void {
-    alert('You win!');
+    popupBody.classList.remove('none');
+    popupShadow.classList.remove('none');
 }
 
 function removeLevel1(): void {
@@ -1744,6 +1750,7 @@ function removeLevel4(): void {
         ) {
             win();
         } else {
+            mark4.classList.add('done');
             sausage1Task5Img.classList.remove('up');
             code4.classList.add('none');
             table4.classList.add('none');
@@ -1773,6 +1780,7 @@ function removeLevel5(): void {
         ) {
             win();
         } else {
+            mark5.classList.add('done');
             sandwich2Task6Img.classList.remove('up');
             sandwich3Task6Img.classList.remove('up');
             code5.classList.add('none');
@@ -1803,6 +1811,7 @@ function removeLevel6(): void {
         ) {
             win();
         } else {
+            mark6.classList.add('done');
             cookie1Task7Img.classList.remove('up');
             cookie3Task7Img.classList.remove('up');
             code6.classList.add('none');
@@ -1833,6 +1842,7 @@ function removeLevel7(): void {
         ) {
             win();
         } else {
+            mark7.classList.add('done');
             cookie3Task8Img.classList.remove('up');
             cookie4Task8Img.classList.remove('up');
             code7.classList.add('none');
@@ -1863,6 +1873,7 @@ function removeLevel8(): void {
         ) {
             win();
         } else {
+            mark8.classList.add('done');
             plate1Task9Img.classList.remove('up');
             plate2Task9Img.classList.remove('up');
             sausage3Task9Img.classList.remove('up');
@@ -1896,6 +1907,7 @@ function removeLevel9(): void {
         ) {
             win();
         } else {
+            mark9.classList.add('done');
             plateTask10Img.classList.remove('up');
             bento2Task10Img.classList.remove('up');
             bento1Task10Img.classList.remove('up');
@@ -1930,6 +1942,7 @@ function removeLevel10(): void {
         ) {
             win();
         } else {
+            mark10.classList.add('done');
             plateFirst.classList.remove('up');
             plateSecond.classList.remove('up');
             code10.classList.add('none');
@@ -2276,7 +2289,7 @@ help10.addEventListener('click', function readInput(): void {
 
 // menu navigation ------------------------------------------------------------------------
 
-level1.addEventListener('click', function chooseLevel(): void {
+function chooseLevel1(): void {
     code1.classList.remove('none');
     table1.classList.remove('none');
     code2.classList.add('none');
@@ -2311,6 +2324,10 @@ level1.addEventListener('click', function chooseLevel(): void {
     table10.classList.add('none');
     task10.classList.add('none');
     input.value = '';
+}
+
+level1.addEventListener('click', function chooseLevel() {
+    chooseLevel1();
 });
 
 level2.addEventListener('click', function chooseLevel(): void {
@@ -2642,4 +2659,56 @@ level10.addEventListener('click', function chooseLevel(): void {
     table9.classList.add('none');
     task9.classList.add('none');
     input.value = '';
+});
+
+// reset function ----------------------------------------------------------------------------
+
+function removeMarkerColor(x: HTMLElement): void {
+    x.classList.remove('done');
+    x.classList.remove('green');
+    x.classList.remove('yellow');
+}
+
+function resetPage(): void {
+    chooseLevel1();
+    removeMarkerColor(mark1);
+    removeMarkerColor(mark2);
+    removeMarkerColor(mark3);
+    removeMarkerColor(mark4);
+    removeMarkerColor(mark5);
+    removeMarkerColor(mark6);
+    removeMarkerColor(mark7);
+    removeMarkerColor(mark8);
+    removeMarkerColor(mark9);
+    removeMarkerColor(mark10);
+    help.classList.remove('put');
+    help2.classList.remove('put');
+    help3.classList.remove('put');
+    help4.classList.remove('put');
+    help5.classList.remove('put');
+    help6.classList.remove('put');
+    help7.classList.remove('put');
+    help8.classList.remove('put');
+    help9.classList.remove('put');
+    help10.classList.remove('put');
+}
+
+reset.addEventListener('click', function putReset() {
+    resetPage();
+});
+
+function closePopup(): void {
+    popupBody.classList.add('none');
+    popupShadow.classList.add('none');
+    chooseLevel1();
+}
+
+popupClose.addEventListener('click', function closePop(): void {
+    closePopup();
+});
+
+document.addEventListener('click', function closePop(e: Event): void {
+    if (e.target === popupBody) {
+        closePopup();
+    }
 });
