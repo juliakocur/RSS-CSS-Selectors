@@ -1957,20 +1957,26 @@ function removeLevel10(): void {
     }, 300);
 }
 
-const plateinput = 'plate';
-const bentoinput = 'bento';
-const fancyinput = '#fancy';
-const sandwichinput = 'plate sandwich';
-const sausageinput = '#fancy sausage';
-const sandwsmall = 'sandwich.small';
-const cookieinput = 'cookie.small';
-const bentocookieinput = 'bento cookie.small';
-const sausagesinput = 'plate, bento';
-const sausages2input = 'bento, plate';
-const allinput = '*';
+interface myObj {
+    [index: string]: string;
+}
+
+const obj: myObj = {
+    plateinput: 'plate',
+    bentoinput: 'bento',
+    fancyinput: '#fancy',
+    sandwichinput: 'plate sandwich',
+    sausageinput: '#fancy sausage',
+    sandwsmall: 'sandwich.small',
+    cookieinput: 'cookie.small',
+    bentocookieinput: 'bento cookie.small',
+    sausagesinput: 'plate, bento',
+    sausages2input: 'bento, plate',
+    allinput: '*',
+};
 
 enter.addEventListener('click', function readInput(): void {
-    if (input.value === plateinput && level.textContent === 'Level 1 of 10') {
+    if (input.value === obj.plateinput && level.textContent === 'Level 1 of 10') {
         plateFirst.classList.add('up');
         plateSecond.classList.add('up');
         mark1.classList.add('done');
@@ -1980,7 +1986,7 @@ enter.addEventListener('click', function readInput(): void {
         } else {
             mark1.classList.add('green');
         }
-    } else if (input.value === bentoinput && level.textContent === 'Level 2 of 10') {
+    } else if (input.value === obj.bentoinput && level.textContent === 'Level 2 of 10') {
         bento1Img.classList.add('up');
         bento2Img.classList.add('up');
         mark2.classList.add('done');
@@ -1990,7 +1996,7 @@ enter.addEventListener('click', function readInput(): void {
         } else {
             mark2.classList.add('green');
         }
-    } else if (input.value === fancyinput && level.textContent === 'Level 3 of 10') {
+    } else if (input.value === obj.fancyinput && level.textContent === 'Level 3 of 10') {
         plate1Task3Img.classList.add('up');
         mark3.classList.add('done');
         removeLevel3();
@@ -1999,7 +2005,7 @@ enter.addEventListener('click', function readInput(): void {
         } else {
             mark3.classList.add('green');
         }
-    } else if (input.value === sandwichinput && level.textContent === 'Level 4 of 10') {
+    } else if (input.value === obj.sandwichinput && level.textContent === 'Level 4 of 10') {
         sandwich1Task4Img.classList.add('up');
         removeLevel4();
         if (help4.classList.contains('put')) {
@@ -2007,7 +2013,7 @@ enter.addEventListener('click', function readInput(): void {
         } else {
             mark4.classList.add('green');
         }
-    } else if (input.value === sausageinput && level.textContent === 'Level 5 of 10') {
+    } else if (input.value === obj.sausageinput && level.textContent === 'Level 5 of 10') {
         sausage1Task5Img.classList.add('up');
         mark4.classList.add('done');
         removeLevel5();
@@ -2016,7 +2022,7 @@ enter.addEventListener('click', function readInput(): void {
         } else {
             mark5.classList.add('green');
         }
-    } else if (input.value === sandwsmall && level.textContent === 'Level 6 of 10') {
+    } else if (input.value === obj.sandwsmall && level.textContent === 'Level 6 of 10') {
         sandwich2Task6Img.classList.add('up');
         sandwich3Task6Img.classList.add('up');
         mark5.classList.add('done');
@@ -2026,7 +2032,7 @@ enter.addEventListener('click', function readInput(): void {
         } else {
             mark6.classList.add('green');
         }
-    } else if (input.value === cookieinput && level.textContent === 'Level 7 of 10') {
+    } else if (input.value === obj.cookieinput && level.textContent === 'Level 7 of 10') {
         cookie1Task7Img.classList.add('up');
         cookie3Task7Img.classList.add('up');
         mark6.classList.add('done');
@@ -2036,7 +2042,7 @@ enter.addEventListener('click', function readInput(): void {
         } else {
             mark7.classList.add('green');
         }
-    } else if (input.value === bentocookieinput && level.textContent === 'Level 8 of 10') {
+    } else if (input.value === obj.bentocookieinput && level.textContent === 'Level 8 of 10') {
         cookie3Task8Img.classList.add('up');
         cookie4Task8Img.classList.add('up');
         mark7.classList.add('done');
@@ -2047,8 +2053,8 @@ enter.addEventListener('click', function readInput(): void {
             mark8.classList.add('green');
         }
     } else if (
-        (input.value === sausagesinput && level.textContent === 'Level 9 of 10') ||
-        (input.value === sausages2input && level.textContent === 'Level 9 of 10')
+        (input.value === obj.sausagesinput && level.textContent === 'Level 9 of 10') ||
+        (input.value === obj.sausages2input && level.textContent === 'Level 9 of 10')
     ) {
         plate1Task9Img.classList.add('up');
         plate2Task9Img.classList.add('up');
@@ -2063,7 +2069,7 @@ enter.addEventListener('click', function readInput(): void {
         } else {
             mark9.classList.add('green');
         }
-    } else if (input.value === allinput && level.textContent === 'Level 10 of 10') {
+    } else if (input.value === obj.allinput && level.textContent === 'Level 10 of 10') {
         plateTask10Img.classList.add('up');
         bento2Task10Img.classList.add('up');
         bento1Task10Img.classList.add('up');
@@ -2084,7 +2090,7 @@ enter.addEventListener('click', function readInput(): void {
 });
 
 document.addEventListener('keyup', function isEnter(e): void {
-    if (e.code === 'Enter' && input.value === plateinput && level.textContent === 'Level 1 of 10') {
+    if (e.code === 'Enter' && input.value === obj.plateinput && level.textContent === 'Level 1 of 10') {
         plateFirst.classList.add('up');
         plateSecond.classList.add('up');
         mark1.classList.add('done');
@@ -2094,7 +2100,7 @@ document.addEventListener('keyup', function isEnter(e): void {
         } else {
             mark1.classList.add('green');
         }
-    } else if (e.code === 'Enter' && input.value === bentoinput && level.textContent === 'Level 2 of 10') {
+    } else if (e.code === 'Enter' && input.value === obj.bentoinput && level.textContent === 'Level 2 of 10') {
         bento1Img.classList.add('up');
         bento2Img.classList.add('up');
         mark2.classList.add('done');
@@ -2104,7 +2110,7 @@ document.addEventListener('keyup', function isEnter(e): void {
         } else {
             mark2.classList.add('green');
         }
-    } else if (e.code === 'Enter' && input.value === fancyinput && level.textContent === 'Level 3 of 10') {
+    } else if (e.code === 'Enter' && input.value === obj.fancyinput && level.textContent === 'Level 3 of 10') {
         plate1Task3Img.classList.add('up');
         mark3.classList.add('done');
         removeLevel3();
@@ -2113,7 +2119,7 @@ document.addEventListener('keyup', function isEnter(e): void {
         } else {
             mark3.classList.add('green');
         }
-    } else if (e.code === 'Enter' && input.value === sandwichinput && level.textContent === 'Level 4 of 10') {
+    } else if (e.code === 'Enter' && input.value === obj.sandwichinput && level.textContent === 'Level 4 of 10') {
         sandwich1Task4Img.classList.add('up');
         mark4.classList.add('done');
         removeLevel4();
@@ -2122,7 +2128,7 @@ document.addEventListener('keyup', function isEnter(e): void {
         } else {
             mark4.classList.add('green');
         }
-    } else if (e.code === 'Enter' && input.value === sausageinput && level.textContent === 'Level 5 of 10') {
+    } else if (e.code === 'Enter' && input.value === obj.sausageinput && level.textContent === 'Level 5 of 10') {
         sausage1Task5Img.classList.add('up');
         mark5.classList.add('done');
         removeLevel5();
@@ -2131,7 +2137,7 @@ document.addEventListener('keyup', function isEnter(e): void {
         } else {
             mark5.classList.add('green');
         }
-    } else if (e.code === 'Enter' && input.value === sandwsmall && level.textContent === 'Level 6 of 10') {
+    } else if (e.code === 'Enter' && input.value === obj.sandwsmall && level.textContent === 'Level 6 of 10') {
         sandwich2Task6Img.classList.add('up');
         sandwich3Task6Img.classList.add('up');
         mark6.classList.add('done');
@@ -2141,7 +2147,7 @@ document.addEventListener('keyup', function isEnter(e): void {
         } else {
             mark6.classList.add('green');
         }
-    } else if (e.code === 'Enter' && input.value === cookieinput && level.textContent === 'Level 7 of 10') {
+    } else if (e.code === 'Enter' && input.value === obj.cookieinput && level.textContent === 'Level 7 of 10') {
         cookie1Task7Img.classList.add('up');
         cookie3Task7Img.classList.add('up');
         mark7.classList.add('done');
@@ -2151,7 +2157,7 @@ document.addEventListener('keyup', function isEnter(e): void {
         } else {
             mark7.classList.add('green');
         }
-    } else if (e.code === 'Enter' && input.value === bentocookieinput && level.textContent === 'Level 8 of 10') {
+    } else if (e.code === 'Enter' && input.value === obj.bentocookieinput && level.textContent === 'Level 8 of 10') {
         cookie3Task8Img.classList.add('up');
         cookie4Task8Img.classList.add('up');
         mark8.classList.add('done');
@@ -2162,8 +2168,8 @@ document.addEventListener('keyup', function isEnter(e): void {
             mark8.classList.add('green');
         }
     } else if (
-        (e.code === 'Enter' && input.value === sausagesinput && level.textContent === 'Level 9 of 10') ||
-        (e.code === 'Enter' && input.value === sausages2input && level.textContent === 'Level 9 of 10')
+        (e.code === 'Enter' && input.value === obj.sausagesinput && level.textContent === 'Level 9 of 10') ||
+        (e.code === 'Enter' && input.value === obj.sausages2input && level.textContent === 'Level 9 of 10')
     ) {
         plate1Task9Img.classList.add('up');
         plate2Task9Img.classList.add('up');
@@ -2178,7 +2184,7 @@ document.addEventListener('keyup', function isEnter(e): void {
         } else {
             mark9.classList.add('green');
         }
-    } else if (e.code === 'Enter' && input.value === allinput && level.textContent === 'Level 10 of 10') {
+    } else if (e.code === 'Enter' && input.value === obj.allinput && level.textContent === 'Level 10 of 10') {
         plateTask10Img.classList.add('up');
         bento2Task10Img.classList.add('up');
         bento1Task10Img.classList.add('up');
@@ -2663,10 +2669,10 @@ level10.addEventListener('click', function chooseLevel(): void {
 
 // reset function ----------------------------------------------------------------------------
 
-function removeMarkerColor(x: HTMLElement): void {
-    x.classList.remove('done');
-    x.classList.remove('green');
-    x.classList.remove('yellow');
+function removeMarkerColor<T>(x: T): void {
+    (<HTMLElement>x).classList.remove('done');
+    (<HTMLElement>x).classList.remove('green');
+    (<HTMLElement>x).classList.remove('yellow');
 }
 
 function resetPage(): void {
